@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery_plantuml.js"></script>
+<!-- rawdeflate.js is implicity used by jquery_plantuml.js -->
+</head>
+
+<body>
+<p>Example</p>
+<hr>
+<img uml="
+Bob->Alice : foo
+Bob<--Alice : foo
+">
+<hr>
+<img uml="
+Bob->Alice : dummy
+Bob<--Alice : dummy
+">
+<hr>
+<img uml="
+!include https://raw.githubusercontent.com/kirchsth/C4-PlantUML/extended/C4_Container.puml
+
+Person(personAlias, 'Administrator', 'Optional Description 1')
+Container(containerAlias, 'Label', 'Technology', 'Optional Description')
+System(systemAlias, 'Label', 'Optional Description')
+
+Rel(personAlias, containerAlias, 'Label', 'Optional Technology')
+">
+
+</body>
+
+</html> 
